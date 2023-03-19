@@ -1,3 +1,3 @@
 # jordan_bot
 
-Autonomous buying bot on https://www.solebox.com
+Autonomous buying bot for https://www.solebox.com

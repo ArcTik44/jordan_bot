@@ -4,6 +4,7 @@ import time
 def Login(driver,email,password):
     driver.get("https://www.solebox.com/en_CZ/login")
 
+    time.sleep(2) 
     reject_btn = driver.find_element(By.ID,"onetrust-reject-all-handler")
     reject_btn.click()
 

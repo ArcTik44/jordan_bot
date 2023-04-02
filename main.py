@@ -8,7 +8,6 @@ from selenium.webdriver.common.by import By
 from dotenv import load_dotenv
 from discord.ext import commands
 import discord
-import time
 
 
 # inicializace driveru

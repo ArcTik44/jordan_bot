@@ -1,5 +1,6 @@
 import os
 from auth import Login
+from checkout import ProceedCheckout
 from deal import FindShoesById
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -19,9 +20,11 @@ acc_pass = os.getenv('PASSWORD')
 shoes_id = os.getenv('SHOES_ID')
 shoes_size = os.getenv('SHOES_SIZE')
 payment_option = os.getenv('PAYMENT_OPTION')
+shipping_type = os.getenv('SHIPPING')
 
 Login(driver=driver,email=acc_email,password=acc_pass)
 FindShoesById(driver=driver,shoe_id=shoes_id,shoe_size=shoes_size)
+ProceedCheckout(driver=driver,payment_option=payment_option,shipping=shipping_type)
 
 # intents = discord.Intents.default()
 # intents.message_content = True
